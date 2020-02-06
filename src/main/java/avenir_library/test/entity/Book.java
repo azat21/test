@@ -1,24 +1,28 @@
 package avenir_library.test.entity;
 
 
+import avenir_library.test.enums.Category;
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
 
-@Getter
-@Setter
 @Entity
 @Table(name = "books")
-public class Book {
+@Getter
+@Setter
+public class Book extends BaseEntity {
+    @Column(name = "name")
+    private String name;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @Enumerated(EnumType.STRING)
+    @Column(name = "category")
+    private Category category;
 
-    @Column(name = "bookName")
-    private String bookName;
+    @ManyToOne
+    @JoinColumn(name = "author_id")
+    private Author author;
 
-    @Column(name = "authorName")
-    private String authorName;
+    @Column(name = "quantity")
+    private Integer quantity;
 }

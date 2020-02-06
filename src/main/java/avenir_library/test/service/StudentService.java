@@ -1,8 +1,8 @@
 package avenir_library.test.service;
 
-import avenir_library.test.dto.StudentCreateDto;
-import avenir_library.test.dto.StudentDto;
-import avenir_library.test.dto.StudentUpdateDto;
+import avenir_library.test.dto.student.StudentCreateDto;
+import avenir_library.test.dto.student.StudentDto;
+import avenir_library.test.dto.student.StudentUpdateDto;
 
 import java.util.List;
 

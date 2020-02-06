@@ -1,4 +1,4 @@
-package avenir_library.test.dto;
+package avenir_library.test.dto.student;
 
 import lombok.Getter;
 import lombok.Setter;

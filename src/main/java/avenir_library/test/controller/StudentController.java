@@ -1,8 +1,8 @@
 package avenir_library.test.controller;
 
-import avenir_library.test.dto.StudentCreateDto;
-import avenir_library.test.dto.StudentDto;
-import avenir_library.test.dto.StudentUpdateDto;
+import avenir_library.test.dto.student.StudentCreateDto;
+import avenir_library.test.dto.student.StudentDto;
+import avenir_library.test.dto.student.StudentUpdateDto;
 import avenir_library.test.service.StudentService;
 import org.springframework.web.bind.annotation.*;
 

@@ -9,11 +9,7 @@ import javax.persistence.*;
 @Setter
 @Entity
 @Table(name = "students")
-public class Student {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+public class Student extends BaseEntity {
 
     @Column(name = "first_name")
     private String firstName;
